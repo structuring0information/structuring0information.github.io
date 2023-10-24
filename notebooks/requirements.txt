@@ -1,0 +1,8 @@
+pandas
+plotly
+wordcloud
+matplotlib
+folium
+sklearn
+pyLDAvis
+ipywidgets
