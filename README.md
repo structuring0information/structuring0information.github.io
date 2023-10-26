@@ -1,14 +1,14 @@
 # Project Name
 
-Datenvisulaisierung Ukraine Krieg
+Datenvisualisierungen zu russischen Angriffen auf die Ukraine
 
 ## Installation
 
-INstallation der Requirements im requirements.txt im Notebook
+Die Requirements im requirements.txt im Notebook installieren
 
 ## Usage
 
-Nutzen der ukraine_vis.ipynb unter /notebooks
+ukraine_vis.ipynb unter /notebooks nutzen
 
 ## Dependencies
 
