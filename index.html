@@ -4,6 +4,8 @@
     <title>Visualisierungen</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS einbinden -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .card-container {
             display: flex;
@@ -57,19 +59,22 @@
 <body>
    
     <div class="container">
-        <h1 class="text-center my-4">
-            <u>Visualisierungen der russichen Angriffe auf die Ukraine</u>
-        </h1>
-        <p>Bellingcat und das Global Authentication Project haben Daten von über 1.000 Vorfällen während der russischen Invasion in der Ukraine gesammelt. 
-            Diese Daten beinhalten Raketen- und Geschossangriffe auf zivile Gebiete, Zerstörung ziviler Infrastruktur und sichtbare Verletzungen oder Todesfälle. 
-            Der Datensatz ist damit keine repräsentative, empirische Studie, doch kann er zeigen, welche Gebiete der Ukraine besonders betroffen waren und auf welche Art und Weise. 
-            Die folgenden Visualisierungen können Anhaltspunkte für weitere Recherchen sein.
-        </p>
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="text-center my-4">
+                  <u>Visualisierungen der russichen Angriffe auf die Ukraine</u>
+                </h1>
+                <p>Bellingcat und das Global Authentication Project haben Daten von über 1.000 Vorfällen während der russischen Invasion in der Ukraine gesammelt. 
+                Diese Daten beinhalten Raketen- und Geschossangriffe auf zivile Gebiete, Zerstörung ziviler Infrastruktur und sichtbare Verletzungen oder Todesfälle. 
+                Der Datensatz ist damit keine repräsentative, empirische Studie, doch kann er zeigen, welche Gebiete der Ukraine besonders betroffen waren und auf welche Art und Weise. 
+                Die folgenden Visualisierungen können Anhaltspunkte für weitere Recherchen sein.
+                </p>
+            </div>
         <h2 class="mt-5">Kartenvisualisierung</h2>
         <div class="card-container">
             <div class="col-md-4">
-                <div class="card mb-4">
-                    <img class="card-img-top" src="vorschau/leaflet_point_map.png" alt="Punkt Karte Leaflet">
+                <div class="vorschau">
+                    <img class="bild" src="vorschau/leaflet_point_map.png" alt="Punkt Karte Leaflet">
                     <div class="card-body">
                         <h5 class="card-title">Punkt Karte Leaflet</h5>
                         <a href="maps/leaflet_point_map.html" class="btn btn-primary">Ansehen</a>
@@ -78,8 +83,8 @@
             </div>
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img class="card-img-top" src="vorschau/leaflet_heat_map.png" alt="Heat Map Zeitbasiert">
-                    <div class="card-body">
+                    <img class="vorschau" src="vorschau/leaflet_heat_map.png" alt="Heat Map Zeitbasiert">
+                    <div class="bild">
                         <h5 class="card-title">Heat Map Zeitbasiert</h5>
                         <a href="maps/leaflet_heat_map.html" class="btn btn-primary">Ansehen</a>
                     </div>
@@ -87,8 +92,8 @@
             </div>
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img class="card-img-top" src="vorschau/kepler_heat_inc.png" alt="Kepler Heatmap">
-                    <div class="card-body">
+                    <img class="vorschau" src="vorschau/kepler_heat_inc.png" alt="Kepler Heatmap">
+                    <div class="bild">
                         <h5 class="card-title">Kepler Heatmap</h5>
                         <a href="maps/kepler_heatmap_increment.html" class="btn btn-primary">Ansehen</a>
                     </div>
@@ -96,27 +101,28 @@
             </div>
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img class="card-img-top" src="vorschau/kepler_points_time.png" alt="Kepler Punkte Zeitbasiert">
-                    <div class="card-body">
-                        <h5 class="card-title">Kepler Punkte Zeitbasiert</h5>
+                    <img class="vorschau" src="vorschau/kepler_points_time.png" alt="Kepler Punkte Zeitbasiert">
+                    <div class="bild">
+                        <h5 class="card-title">Karte mit Informationen über die Angriffe</h5>
                         <a href="maps/kepler_points_time.html" class="btn btn-primary">Ansehen</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img class="card-img-top" src="vorschau/kepler_bars_inc.png" alt="Vorschau Kepler Bars Inkrementell">
-                    <div class="card-body">
+                    <img class="vorschau" src="vorschau/kepler_bars_inc.png" alt="Vorschau Kepler Bars Inkrementell">
+                    <div class="bild">
                         <h5 class="card-title">Russische Angriffe nach Region</h5>
                         <a href="maps/kepler_bars_incremental.html" class="btn btn-primary">Ansehen</a>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-md-6">
         <h2 class="mt-5">Balkendiagramme</h2>
-            <div class="col-md-4">
-                <div class="card mb-4">
+            <div class="balkendiagramm">
+                <div class="balken></div>
                     <img class="card-img-top" src="vorschau/association_freq.png" alt="Aossoziationen Barchart">
                     <div class="card-body">
                         <h5 class="card-title">Art der betroffenen Infrastruktur</h5>
@@ -124,8 +130,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
+            <div class="col-md-6">
+                <div class="balkendiagramm">
+                    <div class="balken"></div>
                     <img class="card-img-top" src="vorschau/region_count.png" alt="Vorschau Region Count">
                     <div class="card-body">
                         <h5 class="card-title">Russische Angriffe nach Region</h5>
@@ -133,6 +140,8 @@
                     </div>
                 </div>
             </div>
+            <!-- Bootstrap JS einbinden -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
             <!-- Repeat for each other page... -->
             <!-- Just change the .png preview image and the URL -->
         </div>
